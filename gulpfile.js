@@ -12,10 +12,10 @@ var gulp   = require('gulp');
       }))
   });
 
-  gulp.task('deploy', function () {
-    return gulp.src("./dist/**/*")
-      .pipe(deploy())
-  });
+  // gulp.task('deploy', function () {
+  //   return gulp.src("./dist/**/*")
+  //     .pipe(deploy())
+  // });
 
 const { src, dest, lastRun, series, parallel, watch } = require('gulp');
 var fs = require('fs'),
