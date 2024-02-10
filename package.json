@@ -41,6 +41,6 @@
   },
   "scripts": {
     "predeploy": "gulp –build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gulp"
   }
 }
