@@ -5,11 +5,16 @@ var gulp   = require('gulp');
   var deploy = require('gulp-gh-pages');
 
   gulp.task('deploy', function () {
-    return gulp.src("./prod/**/*")
+    return gulp.src("./dist/**/*")
       .pipe(deploy({ 
         remoteUrl: "https://github.com/Je5514/Gwen.github.io.git",
         branch: "master"
       }))
+  });
+
+  gulp.task('deploy', function () {
+    return gulp.src("./dist/**/*")
+      .pipe(deploy())
   });
 
 const { src, dest, lastRun, series, parallel, watch } = require('gulp');
