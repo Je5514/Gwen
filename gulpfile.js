@@ -1,6 +1,16 @@
 
 // Required Plugins
 
+var gulp   = require('gulp');
+  var deploy = require('gulp-gh-pages');
+
+  gulp.task('deploy', function () {
+    return gulp.src("./prod/**/*")
+      .pipe(deploy({ 
+        remoteUrl: "https://github.com/Je5514/Gwen.github.io.git",
+        branch: "master"
+      }))
+  });
 
 const { src, dest, lastRun, series, parallel, watch } = require('gulp');
 var fs = require('fs'),
