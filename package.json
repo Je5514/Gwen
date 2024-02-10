@@ -2,7 +2,7 @@
   "name": "WRG",
   "version": "1.0.0",
   "author": "WRG",
-  "homepage": "https://je5514.github.io/Gwen/",
+  
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^9.6.1",
@@ -38,9 +38,5 @@
   "dependencies": {
     "aos": "^3.0.0-beta.6",
     "gulp-gh-pages": "^0.5.4"
-  },
-  "scripts": {
-    "predeploy": "gulp –build",
-    "deploy": "gulp"
   }
 }
