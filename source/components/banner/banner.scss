@@ -1,0 +1,25 @@
+.gwn.banner{
+    .banner__wrapper{
+        display: flex;
+        align-items: center;
+        margin-bottom: rem(30);
+    }
+    figure{
+        max-width: rem(80);
+        max-height: rem(80);
+        img{
+            border-radius: 50%;
+        }
+    }
+    article{
+        padding-left: rem(20);
+        h2{
+            margin-bottom: rem(5);
+        }
+    }
+    .banner__about{
+        h3{
+            margin-bottom: rem(10);
+        }
+    }
+}

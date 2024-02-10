@@ -1,0 +1,36 @@
+.gwn.summary{
+    margin-bottom: rem(30);
+    h3{
+        margin-bottom: rem(10);
+    }
+    .summary__wrapper{
+        // @media #{$md}{
+        //     display: flex;
+        // }
+    }
+    .summary__date {
+        margin-bottom: rem(6);
+    }
+    article{
+        // @media #{$md}{
+        //     padding-left: rem(60);
+        // }
+        span{
+            font-size: rem(11);
+        }
+    }
+    h2{
+        position: relative;
+        padding-left: rem(40);
+        &::before{
+            content: '';
+            position: absolute;
+            width: rem(30);
+            height: rem(2);
+            background-color: #fff;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50);
+        }
+    }
+}

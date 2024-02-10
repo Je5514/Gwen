@@ -1,0 +1,39 @@
+include _mixin
+-var page = ''
+-var bodyClass = ''
+-var pagetitle = ''
+-var sitetitle = ''
+block variables
+doctype html
+html(dir=lang == 'ar' ? 'rtl' : 'ltr')
+  head
+    title Gwen
+    
+    meta(http-equiv='Content-Type', content='text/html;charset=utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
+    meta(name='keywords', content='Gwen')
+    meta(name='description', content="Gwen")
+    meta(name="title" content="Gwen")
+    meta(property="og:type" content="website")
+    meta(property="og:url" content="WEBSITEURL.COM")
+    meta(property="og:title" content="Gwen")
+    meta(property="og:description" content="Gwen")
+    meta(property="og:image" content="Gwen/Image.Format")
+    meta(property="twitter:card" content="summary_large_image")
+    meta(property="twitter:url" content="WEBSITEURL.COM")
+    meta(property="twitter:title" content="Gwen")
+    meta(property="twitter:description" content="Gwen")
+    meta(property="twitter:image" content="Gwen/Image.Format")
+    meta(name="format-detection" content="telephone=no")
+    link(rel="shortcut icon", href="favicon.ico", type="image/vnd.microsoft.icon")
+    include _styleLinks
+    block stylelinks
+
+    block head
+  body(dir=lang == 'ar' ? 'rtl' : 'ltr', class=bodyClass)
+    block header
+    main.e.main
+      block body
+    block footer
+    include _scriptLinks
+    block foot

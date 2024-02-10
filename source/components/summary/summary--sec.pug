@@ -1,0 +1,10 @@
+.gwn.summary(class=summaryClass)
+    h2= summaryTitle
+    .summary__wrapper
+        if(summaryDate)
+            .summary__date 
+                time= summaryDate
+        article
+            h3= summaryHeading 
+            p= summaryContent
+            span= summaryPlace

@@ -1,0 +1,19 @@
+//- //- Define the menuWithSVG mixin before using it
+//- mixin menuWithSVG(link, svgPath, alt, role, ariaLabel)
+//-   a(href=link)
+//-     img(src=svgPath,alt=alt, role=role, aria-label=ariaLabel)
+//- header.header 
+//-   .navbar 
+//-     .menu-items
+//-       ul#menu-item 
+//-         +menu('How it works','How-work.html')
+//-         +menu('Products','products.html')
+//-         +menu('Contact Us','contact.html')
+//-         li
+//-           +menuWithSVG('person.html', '../images/svg/person.svg', 'person-svg' ,'img', 'Description of your SVG image')
+//-         li#shopbar
+//-           +menuWithSVG('','../images/svg/shop.svg','shop-svg','img' ,'Description of your SVG image')
+//-     .toggle#Toggle
+//-       img(src="../images/svg/menubar.svg" alt="menubar" role="img" aria-label="Description of your SVG image")
+
+  
