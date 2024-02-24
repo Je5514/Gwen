@@ -1,25 +1,38 @@
 .gwn.banner{
     .banner__wrapper{
-        display: flex;
-        align-items: center;
         margin-bottom: rem(30);
+        @media #{$md}{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: rem(30);
+            gap: rem(100);
+        }
     }
     figure{
-        max-width: rem(80);
-        max-height: rem(80);
+        max-width: rem(300);
+        // max-height: rem(80);
+        flex-basis: 50%;
         img{
             border-radius: 50%;
         }
     }
     article{
+        flex-basis: 50%;
         padding-left: rem(20);
         h2{
             margin-bottom: rem(5);
+            color: #bcbaba;
+        }
+        h1{
+            margin-bottom: rem(10);
         }
     }
-    .banner__about{
-        h3{
-            margin-bottom: rem(10);
+    .banner__btns{
+        .l-btn{
+            &:not(:last-of-type){
+                margin-right: rem(20);
+            }
         }
     }
 }

@@ -23,10 +23,16 @@ p {
 h1, h2, h3, h4, h5, h6 {
 	margin: 0 0 rem(20);
 }
+h1{
+	@include font-size(34px, 40px);
+	@media #{$md}{
+		@include font-size(48px, 50px);
+	}
+}
 h2{
 	@include font-size(18px, 24px);
 	@media #{$md}{
-		@include font-size(20px, 26px);
+		@include font-size(28px, 46px);
 	}
 }
 h3{
@@ -37,11 +43,14 @@ h3{
 }
 a {
 	text-decoration: none;
+	color: #fff;
+	transition: 0.3s ease-in-out;
+	font-size: rem(20);
 	&:active {
 
 	}
 	&:hover {
-
+		opacity: 0.8;
 	}
 }
 img {
@@ -59,4 +68,10 @@ img {
 	&:hover{
 		opacity: 0.8;
 	}
+}
+span{
+	font-size: rem(20);
+	color: #bcbaba;
+	margin-bottom: rem(10);
+	display: inline-block;
 }
