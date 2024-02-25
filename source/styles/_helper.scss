@@ -11,7 +11,7 @@ p {
 	font-weight: bold;
 	margin:0 0 rem(20);
 	@media #{$md}{
-		@include font-size(16px, 24px);
+		@include font-size(20px, 28px);
 	}
 	&:last-of-type {
 		margin: 0;
@@ -74,4 +74,10 @@ span{
 	color: #bcbaba;
 	margin-bottom: rem(10);
 	display: inline-block;
+}
+.is-desktop{
+	display: none;
+	@media #{$md}{
+		display: block;
+	}
 }

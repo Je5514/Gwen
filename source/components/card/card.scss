@@ -7,4 +7,22 @@
     .card__item{
         padding: rem(30);
     }
+    ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        li{
+            color: #b5b5b5;
+		    margin-bottom: rem(20);
+        }
+    }
+    &--project{
+        .card__item{
+            padding: rem(10);
+        }
+        figure{
+            img{
+                max-height: rem(450);
+            }
+        }
+    }
 }

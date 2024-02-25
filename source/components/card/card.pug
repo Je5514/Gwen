@@ -1,6 +1,7 @@
-.gwn.card 
+.gwn.card(class=CardClass)
     .card__item
-        h2=cardHeading
+        if(cardHeading)
+            h2=cardHeading
         if(cardContent1) 
             p=cardContent1
         if(cardContent2)
@@ -16,3 +17,6 @@
                     li(role='listitem')= cardList4
                 if(cardList5)
                     li(role='listitem')= cardList5
+        if(cardImg)
+            figure 
+                img(src=cardImg alt='card image')
