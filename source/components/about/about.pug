@@ -1,5 +1,19 @@
 .gwn.about
-    -var summaryHeading= 'About Me'
-    -var summaryContent= 'Myself Sreelakshmi N J, and I am completely deaf. I have a BSc in Computer Science and 1.5 years of experience as a UI developer. I am knowledgeable in HTML5, Pug Jade, CSS3, SCSS, AOS and JavaScript. Please let me know if you are hiring candidates like me.'
-    -var summaryBtn= 'Download CV'
-    include ../summary/summary.pug
+    header 
+        span Get To Know More
+        h1 About me
+    .about__cards 
+        -var cardHeading= 'Experience'
+        -var cardContent1= '1+ years'
+        -var cardContent2= 'UI Developer'
+        include ../card/card.pug
+        -var cardHeading= 'Education'
+        -var cardContent1= "Bachelor's degree in Computer Science"
+        -var cardContent2= false
+        include ../card/card.pug
+    .about__myself 
+        p I'm Sreelakshmi N J, and I am completely deaf. I have a BSc in Computer Science and 1.5 years of experience as a UI developer. I am knowledgeable in HTML5, Pug Jade, CSS3, SCSS, AOS and JavaScript. Please let me know if you are hiring candidates like me.
+    //- -var summaryHeading= 'About Me'
+    //- -var summaryContent= 'Myself Sreelakshmi N J, and I am completely deaf. I have a BSc in Computer Science and 1.5 years of experience as a UI developer. I am knowledgeable in HTML5, Pug Jade, CSS3, SCSS, AOS and JavaScript. Please let me know if you are hiring candidates like me.'
+    //- -var summaryBtn= 'Download CV'
+    //- include ../summary/summary.pug

@@ -4,37 +4,45 @@ block variables
 	-var bodyClass = 'theme--default'
 block story
 	section.section.section--banner
-		.container
+		.container.container--sm 
 			include ../components/banner/banner.pug
 	section.section.section--about 
-		.container 
+		.container.container--sm 
 			include ../components/about/about.pug
 	section.section.section--experience 
-		.container 
-			-var summaryTitle= 'Experience'
-			-var summaryDate= 'Oct 2022 - Jan 2024'
-			-var summaryHeading= 'White Rabbit Labs Pvt Ltd'
-			-var summaryContent= 'UI Developer'
-			-var summaryPlace= 'Infopark, Kochi'
-			include ../components/summary/summary--sec.pug
-	section.section.section--internship
-		.container 
-			-var summaryTitle= 'Internship'
-			-var summaryDate= 'April 2022 - Aug 2022'
-			-var summaryHeading= 'Microsoft Research'
-			-var summaryContent= 'Researcher (Research ISL language)'
-			-var summaryPlace= 'Bangalore'
-			include ../components/summary/summary--sec.pug
-	section.section.section--training 
-		.container 
-			-var summaryTitle= 'Training'
-			-var summaryDate= false
-			-var summaryHeading= 'Winvinaya Foundation'
-			-var summaryContent= 'Soft Skill, Java, JavaScript, Html, CSS, Spring Boot, Bootstrap, Angular, English, MySql'
-			-var summaryPlace= 'Bengaluru, Karnataka'
-			include ../components/summary/summary--sec.pug
-			//- -var summaryHeading= 'Training'
-			//- -var summaryContent= 'Winvinaya Foundation included Soft Skill, Java, JavaScript, Html, CSS, Spring Boot, Bootstrap, Angular, English, MySql'
-			//- include ../components/summary/summary.pug
+		.container.container--sm 
+			include ../components/experience/experience.pug
+	section.section.section--projects 
+		.container.container--sm 
+			include ../components/project/project.pug
+	section.section.section--contact 
+		.container.container--sm 
+			include ../components/contact/contact.pug
+	
+	//- 		-var summaryTitle= 'Experience'
+	//- 		-var summaryDate= 'Oct 2022 - Jan 2024'
+	//- 		-var summaryHeading= 'White Rabbit Labs Pvt Ltd'
+	//- 		-var summaryContent= 'UI Developer'
+	//- 		-var summaryPlace= 'Infopark, Kochi'
+	//- 		include ../components/summary/summary--sec.pug
+	//- section.section.section--internship
+	//- 	.container 
+	//- 		-var summaryTitle= 'Internship'
+	//- 		-var summaryDate= 'April 2022 - Aug 2022'
+	//- 		-var summaryHeading= 'Microsoft Research'
+	//- 		-var summaryContent= 'Researcher (Research ISL language)'
+	//- 		-var summaryPlace= 'Bangalore'
+	//- 		include ../components/summary/summary--sec.pug
+	//- section.section.section--training 
+	//- 	.container 
+	//- 		-var summaryTitle= 'Training'
+	//- 		-var summaryDate= false
+	//- 		-var summaryHeading= 'Winvinaya Foundation'
+	//- 		-var summaryContent= 'Soft Skill, Java, JavaScript, Html, CSS, Spring Boot, Bootstrap, Angular, English, MySql'
+	//- 		-var summaryPlace= 'Bengaluru, Karnataka'
+	//- 		include ../components/summary/summary--sec.pug
+	//- 		//- -var summaryHeading= 'Training'
+	//- 		//- -var summaryContent= 'Winvinaya Foundation included Soft Skill, Java, JavaScript, Html, CSS, Spring Boot, Bootstrap, Angular, English, MySql'
+	//- 		//- include ../components/summary/summary.pug
  
 	

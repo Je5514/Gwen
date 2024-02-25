@@ -1,0 +1,12 @@
+.gwn.about{
+    .about__cards {
+        display: flex;
+        // justify-content: center;
+        gap: rem(80);
+        margin-bottom: rem(30);
+    }
+    header{
+        // text-align: center;
+        margin-bottom: rem(60);
+    }
+}

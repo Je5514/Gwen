@@ -1,0 +1,18 @@
+.gwn.card 
+    .card__item
+        h2=cardHeading
+        if(cardContent1) 
+            p=cardContent1
+        if(cardContent2)
+            p=cardContent2
+        if(cardList1)
+            ul(role='list')
+                li(role='listitem')= cardList1
+                if(cardList2)
+                    li(role='listitem')= cardList2
+                if(cardList3)
+                    li(role='listitem')= cardList3
+                if(cardList4)
+                    li(role='listitem')= cardList4
+                if(cardList5)
+                    li(role='listitem')= cardList5

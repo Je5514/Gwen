@@ -2,8 +2,8 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 rem(24);
-  &--lg {
-  
+  &--sm{
+    max-width: rem(950);
   }
 }
 .section{

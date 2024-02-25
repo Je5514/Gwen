@@ -1,0 +1,10 @@
+.gwn.card{
+    border: rem(2) solid #fff;
+    // max-width: rem(300);
+    // min-height: rem(200);
+    border-radius: rem(20);
+    flex: 1;
+    .card__item{
+        padding: rem(30);
+    }
+}
