@@ -60,11 +60,13 @@ img {
 }
 .l-btn{
 	display: inline-block;
-	background-color: #fff;
-	color: #000;
+	background-color: #782480;
+	border-radius: rem(12);
+	color: #ffff;
 	padding: rem(10) rem(20);
 	margin-top: rem(20);
 	transition: 0.3s ease-in-out;
+	text-transform: uppercase;
 	&:hover{
 		opacity: 0.8;
 	}

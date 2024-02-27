@@ -13,4 +13,14 @@
         // text-align: center;
         margin-bottom: rem(60);
     }
+    .about__wrapper{
+        @media #{$md}{
+            display: flex;
+            align-items: center;
+            gap: rem(50);
+        }
+    }
+    .l-btn{
+        margin-right: rem(30);
+    }
 }
