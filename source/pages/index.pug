@@ -4,17 +4,17 @@ block variables
 	-var bodyClass = 'theme--default'
 block story
 	section.section.section--banner
-		.container.container--sm 
-			include ../components/banner/banner.pug
-	section.section.section--about 
-		.container.container--sm 
-			include ../components/about/about.pug
-	section.section.section--experience 
-		.container.container--sm 
-			include ../components/experience/experience.pug
+		//- .container.container--sm 
+		include ../components/banner/banner.pug
 	section.section.section--projects 
 		.container.container--sm 
 			include ../components/project/project.pug
+	section.section.section--experience 
+		.container.container--sm 
+			include ../components/experience/experience.pug
+	section.section.section--about 
+		.container.container--sm 
+			include ../components/about/about.pug
 	section.section.section--contact 
 		.container.container--sm 
 			include ../components/contact/contact.pug

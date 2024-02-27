@@ -15,14 +15,18 @@
 		    margin-bottom: rem(20);
         }
     }
-    &--project{
-        .card__item{
-            padding: rem(10);
+    figure{
+        figcaption{
+            text-align: center;
+            padding-top: rem(10);
         }
-        figure{
-            img{
-                max-height: rem(450);
-            }
+    }
+    &--project{
+        border-radius: 0%;
+        .card__item{
+            padding: rem(0);
+            width: rem(200);
+            height: rem(200);
         }
     }
 }

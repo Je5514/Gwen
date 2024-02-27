@@ -3,21 +3,23 @@
         span Browse My Recent
         h1 Projects
     .project__card 
-        .project__item
+        a(href='' title='')
             -var cardHeading =false
-            -var cardImg= 'images/webmine1.png'
+            -var cardImg= 'images/skincare.jpg'
+            -var cardList1= false
+            -var CardClass= 'card--project'
+            -var cardCaption= 'SkinCare'
+            include ../card/card.pug
+        a(href='' title='')
+            -var cardHeading =false
+            -var cardImg= 'images/webmine.jpg'
+            -var cardCaption= 'WebMine'
             -var cardList1= false
             -var CardClass= 'card--project'
             include ../card/card.pug
-        .project__item
+        a(href='' title='')
             -var cardHeading =false
-            -var cardImg= 'images/skincare.png'
-            -var cardList1= false
-            -var CardClass= 'card--project'
-            include ../card/card.pug
-        .project__item
-            -var cardHeading =false
-            -var cardImg= 'images/webmine1.png'
+            -var cardImg= ''
             -var cardList1= false
             -var CardClass= 'card--project'
             include ../card/card.pug

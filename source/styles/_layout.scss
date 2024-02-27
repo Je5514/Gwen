@@ -7,6 +7,9 @@
   }
 }
 .section{
+  &:first-of-type{
+    padding-top: 0;
+  }
   padding: rem(60) 0;
   @media #{$md}{
     padding: rem(120) 0;
