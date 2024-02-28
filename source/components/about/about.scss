@@ -31,5 +31,8 @@
     }
     p{
         font-size: rem(16);
+        @media #{$md}{
+            font-size: rem(18);
+        }
     }
 }
