@@ -12,7 +12,7 @@
     .about__wrapper{
         @media #{$md}{
             display: flex;
-            align-items: center;
+            // align-items: center;
             gap: rem(50);
         }
     }
@@ -33,6 +33,20 @@
         font-size: rem(16);
         @media #{$md}{
             font-size: rem(18);
+        }
+    }
+    .about__skill{
+        ul{
+            display: flex;
+            gap: rem(20);
+            li{
+                text-transform: uppercase;
+                color: #bcbaba;
+                cursor:pointer;
+                &:hover{
+                    color: #782480;
+                }
+            }
         }
     }
 }
