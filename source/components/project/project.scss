@@ -1,10 +1,11 @@
 .gwn.project{
     .project__card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
         @media #{$md}{
-            display: flex;
             gap: rem(80);
-            flex-wrap: wrap;
-            justify-content: center;
         }
     }
 }

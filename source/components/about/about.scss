@@ -17,6 +17,19 @@
         }
     }
     .l-btn{
-        margin-right: rem(30);
+        margin-right: rem(14);
+        @media #{$md}{
+            margin-right: rem(30);
+        }
+    }
+    figure{
+        max-width: rem(250);
+        margin: 0 auto rem(30);
+        @media #{$md}{
+            max-width: 100%;;
+        }
+    }
+    p{
+        font-size: rem(16);
     }
 }

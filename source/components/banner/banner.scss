@@ -1,6 +1,9 @@
 .gwn.banner{
-    min-height: 100vh;
+    min-height: 80vh;
     position: relative;
+    @media #{$md}{
+        min-height: 100vh;
+    }
     &::before{
         background-image: url('../../images/me.jpg');
         background-size: cover;
@@ -19,11 +22,18 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, 0%);
+        width: 100%;
         h1{
-            font-size: rem(84);
+            font-size: rem(42);
+            @media #{$md}{
+                font-size: rem(84);
+            }
         }
         span{
-            font-size: rem(30);
+            font-size: rem(20);
+            @media #{$md}{
+                font-size: rem(30);
+            }
         }
     }
     .banner__wrapper{

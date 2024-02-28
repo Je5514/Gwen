@@ -14,12 +14,6 @@
   @media #{$md}{
     padding: rem(200) 0 rem(100);
   }
-  &--training, &--internship, &--experience{
-    padding: 0 0 rem(20);
-    @media #{$md}{
-      padding-bottom: rem(30);
-    }
-  }
   &--banner{
     padding-bottom: rem(40);
     @media #{$md}{
@@ -27,6 +21,8 @@
     }
   }
   &--contact{
-    padding: rem(260) 0;
+    @media #{$xl}{
+      padding: rem(260) 0;
+    }
   }
 }

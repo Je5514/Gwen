@@ -1,7 +1,5 @@
 .gwn.card{
     border: rem(2) solid #fff;
-    // max-width: rem(300);
-    // min-height: rem(200);
     border-radius: rem(20);
     flex: 1;
     .card__item{
@@ -27,6 +25,7 @@
     }
     &--project{
         border-radius: 0%;
+        display: inline-block;
         .card__item{
             padding: rem(0);
             width: rem(200);
