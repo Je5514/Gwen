@@ -38,6 +38,50 @@ function HeaderSticky(){
 HeaderSticky();
 
 
+function menuActive() {
+    if ($('.header__menu').length > 0) {
+        var lastId,
+            topMenu = $("#jsMenu"),
+            topMenuHeight = topMenu.outerHeight() + 1,
+            menuItems = topMenu.find("a"),
+            scrollItems = menuItems.map(function() {
+                var item = $($(this).attr("href"));
+                if (item.length) { return item; }
+            });
+
+        menuItems.click(function(e) {
+            var href = $(this).attr("href"),
+                offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
+            $('html, body').stop().animate({
+                scrollTop: offsetTop
+            }, 650);
+            e.preventDefault();
+        });
+
+        $(window).scroll(function() {
+            var fromTop = $(this).scrollTop() + topMenuHeight;
+
+            var cur = scrollItems.map(function() {
+                if ($(this).offset().top < fromTop)
+                    return this;
+            });
+
+            cur = cur[cur.length - 1];
+            var id = cur && cur.length ? cur[0].id : "";
+
+            if (lastId !== id) {
+                lastId = id;
+                menuItems.removeClass("is-active");
+                menuItems.filter("[href='#" + id + "']").addClass("is-active");
+            }
+        });
+    }
+}
+
+menuActive();
+
+
+
   
   
 

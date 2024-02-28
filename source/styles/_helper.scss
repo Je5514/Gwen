@@ -50,7 +50,7 @@ a {
 
 	}
 	&:hover {
-		opacity: 0.8;
+		opacity: 0.5;
 	}
 }
 img {
@@ -81,5 +81,18 @@ span{
 	display: none;
 	@media #{$md}{
 		display: block;
+	}
+}
+.is-header{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: rem(60);
+	h2{
+		margin-bottom: 0;
+	}
+	span{
+		font-size: rem(30);
+		margin-right: rem(10);
 	}
 }

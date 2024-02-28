@@ -1,18 +1,19 @@
 .gwn.experience 
-    header 
-        span Explore my
+    header.is-header 
+        span My
         h1 Resume
     .experience__wrapper
         .experience__block
             h2 Experience
-            a(href='https://whiterabbit.group/' title='White Rabbit Labs Pvt Ltd').experience__cards 
+            a(href='https://whiterabbit.group/' title='White Rabbit Labs Pvt Ltd' target='_blank').experience__cards 
                 -var cardDate= '24/10/2022 - 31/01/2024'
                 -var cardHeading= 'White Rabbit Labs Pvt Ltd'
                 -var cardContent1= 'UI Developer'
                 -var cardContent2= 'Infopark Phase 2, Kochi'
+                -var cardImg= false
                 -var CardClass= false
                 include ../card/card.pug
-            a(href='https://www.microsoft.com/en-us/research/lab/microsoft-research-india/' title='Microsoft Research').experience__cards 
+            a(href='https://www.microsoft.com/en-us/research/lab/microsoft-research-india/' title='Microsoft Research' target='_blank').experience__cards 
                 -var cardDate= '24/04/2022 - 26/08/2022'
                 -var cardHeading= 'Microsoft Research'
                 -var cardContent1= 'Researcher Intern (ISL Language)'
@@ -21,7 +22,7 @@
                 include ../card/card.pug
         .experience__block
             h2 Education
-            a(href='https://www.nish.ac.in/' title='National Institute of Speech and Hearing').experience__cards 
+            a(href='https://www.nish.ac.in/' title='National Institute of Speech and Hearing' target='_blank').experience__cards 
                 -var cardDate= 'July 2018 - August 2022'
                 -var cardHeading= 'National Institute of Speech and Hearing'
                 -var cardContent1= 'Bsc Computer Science'

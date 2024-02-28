@@ -9,10 +9,6 @@
             gap: rem(80);
         }
     }
-    header{
-        // text-align: center;
-        margin-bottom: rem(60);
-    }
     .about__wrapper{
         @media #{$md}{
             display: flex;

@@ -38,5 +38,10 @@
         li{
             padding: rem(10) rem(20);
         }
+        a{
+            &.is-active{
+                color: #782480;
+            }
+        }
     }
 }

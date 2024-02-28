@@ -5,6 +5,7 @@
         display: inline-block;
         h2{
             line-height: normal;
+            transition: 0.3s ease-in-out;
         }
         p{
             &:first-of-type{
@@ -16,13 +17,10 @@
             }
         }
     }
-    header{
-        margin-bottom: rem(60);
-    }
     .experience__wrapper{
         @media #{$md}{
             display: flex;
-            gap: rem(50);
+            gap: rem(80);
         }
     }
     .experience__block{

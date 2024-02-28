@@ -30,7 +30,15 @@
         .card__item{
             padding: rem(0);
             width: rem(200);
-            height: rem(200);
+            height: rem(170);
+        }
+        figure{
+            img{
+                height: rem(120);
+                object-fit: cover;
+                width: 100%;
+                transition: 0.3s ease-in-out;
+            }
         }
     }
 }

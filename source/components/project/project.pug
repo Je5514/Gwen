@@ -1,25 +1,25 @@
 .gwn.project
-    header 
-        span Browse My Recent
+    header.is-header
+        span Featured
         h1 Projects
     .project__card 
-        a(href='' title='')
+        a(href='' title='skincare' target='_blank')
             -var cardHeading =false
             -var cardImg= 'images/skincare.jpg'
             -var cardList1= false
             -var CardClass= 'card--project'
             -var cardCaption= 'SkinCare'
             include ../card/card.pug
-        a(href='' title='')
+        a(href='https://webmine3.netlify.app/' title='webmine' target='_blank')
             -var cardHeading =false
             -var cardImg= 'images/webmine.jpg'
             -var cardCaption= 'WebMine'
             -var cardList1= false
             -var CardClass= 'card--project'
             include ../card/card.pug
-        a(href='' title='')
+        a(href='https://paloalto-html.wrg-apps.com/unit-42/' title='Palo Alto Unit 42' target='_blank')
             -var cardHeading =false
-            -var cardImg= ''
+            -var cardImg= 'images/palo.jpg'
             -var cardList1= false
             -var CardClass= 'card--project'
             include ../card/card.pug

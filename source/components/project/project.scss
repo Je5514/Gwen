@@ -1,12 +1,10 @@
 .gwn.project{
-    header{
-        margin-bottom: rem(60);
-    }
     .project__card {
         @media #{$md}{
             display: flex;
             gap: rem(80);
             flex-wrap: wrap;
+            justify-content: center;
         }
     }
 }
