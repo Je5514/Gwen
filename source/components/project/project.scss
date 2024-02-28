@@ -4,6 +4,7 @@
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+        gap: rem(40);
         @media #{$md}{
             gap: rem(80);
         }
