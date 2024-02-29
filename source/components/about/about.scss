@@ -53,15 +53,13 @@
                 width: rem(80);
                 height: rem(80);
                 border-radius: 50%;
-                cursor:pointer;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                border: rem(1) solid #fff;
+                border: rem(1) solid #782480;;
                 transition: 0.3s ease-in-out;
                 &:hover{
-                    color: #782480;
-                    box-shadow: 0px 0px 7px 0px #fff;
+                    box-shadow: 0px 0px 7px 2px #782480;;
                 }
             }
         }
