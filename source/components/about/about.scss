@@ -38,11 +38,18 @@
     .about__skill{
         ul{
             display: flex;
+            flex-wrap: wrap;
             gap: rem(20);
             li{
-                text-transform: uppercase;
                 color: #bcbaba;
+                background-color: #2B2222;
+                width: rem(80);
+                height: rem(80);
+                border-radius: 50%;
                 cursor:pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 &:hover{
                     color: #782480;
                 }
