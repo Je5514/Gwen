@@ -1,20 +1,7 @@
 .gwn.footer{
-	padding: rem(40) 0;
-	svg{
-		width: rem(20);
-		height: auto;
-		path{
-			fill:#fff;
-		}
-	}
-	ul{
-		display: flex;
-		align-items: center;
-		gap: rem(20);
-		justify-content: flex-end;
-	}
-	a{
-		display: flex;
-		align-items: center;
-	}
+	p{
+		float: right;
+		font-size: rem(16);
+		padding: rem(20) 0;
+	}	
 }
